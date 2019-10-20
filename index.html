@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>JBW Soft</title>
+	<link href="css/styles.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Mono:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+	<section class="service">
+		<div class="wrapper">
+			<div class="service__message">
+				<div class="wrapper">
+					<p class="service__text-top">
+						Lorem ipsum dolor sit amet donec voluptatem ipsum dolor sit amet donec voluptatem
+					</p>
+					<span class="service__close"></span>
+				</div>
+			</div>
+			<div class="service__content">
+				<div class="service__text">
+					<p class="service__text-l">
+						Professional Сustom
+						Service Just <span>for You</span>
+					</p>
+					<p class="service__text-s">
+						We can do <span>anything</span>
+					</p>
+				</div>
+				<div class="calc">
+					<h3 class="calc__title">Calculate the Price</h3>
+					<span class="calc__text">Choose level</span>
+					<label for="calc__select" class="calc__select">
+						<input type="radio" name="list" value="not_changed" id="calc__bg" checked />
+						<input type="radio" name="list" value="not_changed" id="calc__select">
+						<label class="calc__bg" for="calc__bg"></label>
+						<div class="calc__items">
+							<input type="radio" name="list" value="first_value" id="list0">
+							<label for="list0">Hardcore</label>
+							<input type="radio" name="list" value="second_value" id="list1">
+							<label for="list1">Nightmare</label>
+							<span class="calc__choice">Select</span>
+						</div>
+					</label>
+					<span class="calc__error">Нужно сделать выбор</span>
+					<span class="calc__text calc__text_bottom">How many</span>
+					<div class="calc__bottom">
+						<div class="calc__number">
+							<button class="calc__button calc__button_minus"></button>
+							<input type="text" value="1" readonly>
+							<button class="calc__button calc__button_plus"></button>
+						</div>
+						<div class="calc__summ">
+							<input type="text" readonly>
+							<button class="calc__popup">Pop Up</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="popup">
+			<div class="popup__wrapper"></div>
+			<div class="popup__window">
+				<div class="popup__close"></div>
+				<div class="popup__content">
+					<h3 class="popup__title">Ask us how we can help you</h3>
+					<p class="popup__text">Lorem ipsum dolor sit amet</p>
+					<form action="" class="popup__form" novalidate>
+						<div class="popup__input popup__input_name">
+							<label for="popup__name" class="popup__label">Enter your  name</label>
+							<input type="text" id="popup__name" name="popup__name">
+							<span class="icon"></span>
+							<span class="info info_help">Кириллица + символы</span>
+							<span class="info info_error">Должно быть не менее 3 символов</span>
+						</div>
+						<div class="popup__input popup__input_email">
+							<label for="popup__email" class="popup__label">Enter your email</label>
+							<input type="email" id="popup__email" name="popup__email">
+							<span class="icon"></span>
+							<span class="info info_error">Некорректно заполнено email</span>
+						</div>
+						<div class="popup__input popup__input_phone">
+							<label for="popup__phone" class="popup__label">Your phone</label>
+                            <span class="info info_error">Должно быть не менее 10 цифр</span>
+							<div class="country">
+								<span class="country__item country__item_ua active"></span>
+								<span class="country__item country__item_ru"></span>
+								<span class="country__item country__item_by"></span>
+							</div>
+							<input type="tel" id="popup__phone" name="popup__phone">
+						</div>
+						<button type="submit" class="popup__submit">Continue</button>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="popup-tnx">
+			<div class="popup-tnx__wrapper"></div>
+			<div class="popup-tnx__window">
+				<div class="popup-tnx__close"></div>
+				<div class="popup-tnx__content">
+					<p class="popup-tnx__text">Thank you!</p>
+					<p class="popup-tnx__text popup-tnx__text_s">Please check your email</p>
+					<button class="popup-tnx__button">Ok, tnx</button>
+				</div>
+			</div>
+		</div>
+	</section>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.mask.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
